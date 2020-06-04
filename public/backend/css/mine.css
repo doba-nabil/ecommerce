@@ -1,0 +1,339 @@
+/*---------------- dont delete -----------------*/
+@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
+@import url('https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css');
+.kk {
+    border: 1px dashed #f47741;
+    padding: 21px;
+    margin-bottom: 21px;
+}
+.dataTables_wrapper {
+    overflow: hidden;
+}
+.table {
+    width: 99% !important;
+}
+.btn-success {
+    color: #ffffff !important;
+}
+.btn-primary {
+    box-shadow: none !important;
+}
+.image-preview {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+.image-preview img {
+    width: 100%;
+    height: 100%;
+}
+.btn-remove-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    text-align: center;
+    padding: 0;
+    line-height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+}
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000080;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+}
+.image-preview:hover .btn-remove-img, .image-preview:hover .layer {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------------- login page --------------*/
+.login {
+    width: 100%;
+    height: 100vh;
+    min-height:100%;
+    background: url("../img/login-bg.png") no-repeat;
+    background-size: cover;
+    font-family: Droid Arabic Kufi !important;
+}
+.login-section {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.54);
+    padding: 150px 20px 0 20px;
+}
+.login-section h1 {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 0 0 3px #000;
+    font-weight: bold;
+}
+.login-section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0 70px 0;
+    font-size: 11px;
+}
+.login-section p {
+    font-size: 12px !important;
+}
+.login-section .alert {
+    margin-bottom: 10px;
+}
+.login-section input[type="email"], .login-section input[type="password"] {
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.login-section input[type="submit"] {
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/*----------------- delete if you want --------------*/
+.search_div {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 3px;
+}
+.search_div h4 {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+}
+.search_div button {
+    position: absolute;
+    left: 13px;
+    top: 53px;
+}
+.course_cat {
+    text-align: center;
+    font-weight: bolder;
+    color: #2b2b2b;
+}
+.form-group label {
+    margin-top: 5px;
+}
+.rotate {
+    transform: rotate(90deg);
+    display: inline-block;
+    width: 100%;
+}
+.ff li {
+    margin-bottom: 15px;
+}
+
+.rate-text {
+    border: 1px solid #F0EDED;
+    width: 50px;
+    height: 35px;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.rate-text  {
+    -moz-appearance:textfield;
+}
+.rate-text ::-webkit-outer-spin-button,
+.rate-text ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.preview-images-zone {
+    width: 100%;
+    border: 1px solid #ddd;
+    min-height: 180px;
+    /* display: flex; */
+    padding: 5px 5px 0px 5px;
+    position: relative;
+    overflow:auto;
+}
+.preview-images-zone > .preview-image:first-child {
+    height: 185px;
+    width: 185px;
+    position: relative;
+    margin-right: 5px;
+}
+.preview-images-zone > .preview-image {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+.preview-images-zone > .preview-image > .image-zone {
+    width: 100%;
+    height: 100%;
+}
+.preview-images-zone > .preview-image > .image-zone > img {
+    width: 100%;
+    height: 100%;
+}
+.preview-images-zone > .preview-image > .tools-edit-image {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+.preview-images-zone > .preview-image > .image-cancel {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+.preview-image:hover > .image-zone {
+    cursor: move;
+    opacity: .5;
+}
+.preview-image:hover > .tools-edit-image,
+.preview-image:hover > .image-cancel {
+    display: block;
+}
+.ui-sortable-helper {
+    width: 90px !important;
+    height: 90px !important;
+}
+
+.llll {
+    display: inline-block;
+    width: 40%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(33, 33, 33, 0.12);
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 10px;
+}
+.remove_field {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-right: 8px;
+}
+
+/*----------------------------- payment -----------------------------------*/
+.payment {
+    background: #fbfbfb;
+    padding: 20px 10px;
+    border: 1px dashed #428bca;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.payment h1 {
+    font-size: 15px;
+    margin: 0 0 15px 0;
+    color: #428bca;
+}
+.payment h2 {
+    font-size: 15px;
+    margin: 0;
+}
+.payment h2 a {
+    color: #6589ff;
+}
+.payment p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 25px;
+    text-align: justify;
+}
+.addres-admin li {
+    margin-bottom: 15px;
+}
+
+/*----------------- login page --------------*/
+.login {
+    width: 100%;
+    height: 100vh;
+    min-height:100%;
+    background: url("../img/login-bg.png") no-repeat;
+    background-size: cover;
+    font-family: Droid Arabic Kufi !important;
+}
+.login-section {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.54);
+    padding: 150px 20px 0 20px;
+}
+.login-section h1 {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 0 0 3px #000;
+    font-weight: bold;
+}
+.login-section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0 70px 0;
+    font-size: 11px;
+}
+.login-section p {
+    font-size: 12px !important;
+}
+.login-section .alert {
+    margin-bottom: 10px;
+}
+.login-section input[type="email"], .login-section input[type="password"] {
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.login-section input[type="submit"] {
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
