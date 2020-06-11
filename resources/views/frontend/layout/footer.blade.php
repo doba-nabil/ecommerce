@@ -1,167 +1,179 @@
-<?php
-    $lang = App::getLocale();
-    $currency = Session::get('currency');
-?>
-<section class="top-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="sub-title text-center">
-                    <h4>
-                        <img src="{{ asset('frontend/imgs/msg.png') }}" alt="img" /> @lang('frontend.newsletter2')
-                    </h4>
-                </div>
-            </div>
-            <div class="col-md-7 col-sm-7">
-                <div class="h-search">
-                    <div class="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="sub_email" type="email" placeholder="@lang('frontend.newsletter3')">
-                            <button type="submit" class="sub btn btn-default" data-token="{{ csrf_token() }}"> @lang('frontend.newsletter4')</button>
-                        </div>
-                    </div>
+<footer class="footer footer-three">
+    <div class="inner-footer">
+        <div class="container">
+            <div class="row">
+                <div class="nov-row footer-top "  data-nov-full-width="true"><div class="nov-row-wrap row"><div class="nov-modules col-lg-12 col-md-12 "><div class="block nov-wrap"><div class="title_block">SIGN UP TO NEWSLETTER</div>
+                                <!-- begin module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+                                <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl --><div class="block_newsletter">
+                                    <form action="http://demo.bestprestashoptheme.com/savemart/ar/#footer" method="post">
 
-                </div>
+
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="email" value="" placeholder="Enter your email address">
+                                            <span class="input-group-btn">
+            <button class="btn btn-secondary effect-btn" name="submitNewsletter" type="submit">
+                <span>subscribe</span>
+            </button>
+          </span>
+                                        </div>
+                                        <input type="hidden" name="action" value="0">
+                                    </form>
+                                </div>
+                                <div class="social-content">
+                                    <div class="title_block">
+                                        Follow us on
+                                    </div>
+                                    <div id="social_block">
+                                        <div class="social">
+                                            <ul class="list-inline mb-0 justify-content-end">
+                                                <li class="list-inline-item mb-0"><a href="#" target="_blank"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                <li class="list-inline-item mb-0"><a href="#" target="_blank"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                <li class="list-inline-item mb-0"><a href="#" target="_blank"><i class="zmdi zmdi-youtube-play"></i></a></li>
+                                                <li class="list-inline-item mb-0"><a href="#" target="_blank"><i class="zmdi zmdi-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Popup newsletter -->
+                                <div id="popup-subscribe" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="http://demo.bestprestashoptheme.com/savemart/ar/" method="post">
+                                                    <div class="subscribe_form d-flex justify-content-start ">
+                                                        <div class="inner">
+                                                            <div class="title_block">Sign up to Newsletter</div>
+                                                            <p>Receive email-only deals, special offers &amp; product exclusives</p>
+                                                            <div class="input-subscribe-wrap input-group">
+                                                                <input class="inputNew form-control grey newsletter-input" placeholder="Enter your email address" type="text" name="email" size="18" value="" />
+                                                                <span class="input-group-btn">
+                                    <button type="submit" name="submitNewsletter" class="btn btn-primary">إشترك</button>
+                                </span>
+                                                                <input type="hidden" name="action" value="0" />
+                                                            </div>
+                                                            <div class="checkbox">
+                                <span class="custom-checkbox">
+                                    <input name="no-view" class="no-view" type="checkbox">
+                                    <span class="ps-shown-by-js"><i class="material-icons checkbox-checked">check</i></span>
+                                </span>
+                                                                <span>Don&#039;t show this popup again</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+                                <!-- end module:ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
+                            </div></div></div></div><div class="nov_row-full-width clearfix w-100"></div><div class="nov-row footer-center "  data-nov-full-width="true"><div class="nov-row-wrap row">
+                        <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+                        <div class="nov-html col-xl-4 col-lg-4 col-md-4">
+                            <div class="block">
+                                <div class="block_content">
+                                    <p class="logo-footer"><img src="http://images.vinovathemes.com/prestashop_savemart/logo-footer.png" alt="logo" width="167" height="23" /></p>
+                                    <div class="data-contact d-flex align-self-stretch">
+                                        <div class="title-icon">support<i class="icon-support icon-address"></i></div>
+                                        <div class="content-data-contact">
+                                            <div class="support">Call Customer Services, We Support 24/7 :</div>
+                                            <div class="phone-support">+84-0123-456-789</div>
+                                        </div>
+                                    </div>
+                                    <div class="data-contact d-flex align-self-stretch">
+                                        <div class="title-icon">info contact<i class="icon-info-contact icon-address"></i></div>
+                                        <div class="content-data-contact">
+                                            <div class="info-contact">Contact info :</div>
+                                            <div class="content-info-contact">123 Suspendis matti, Visaosang Building <br /> VST District, NY Accums, North American</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+
+                        <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+                        <div class="nov-html col-xl-3 col-lg-3 col-md-3">
+                            <div class="block">
+                                <div class="title_block">
+                                    CORPORATE INFO
+                                </div>
+                                <div class="block_content">
+                                    <ul>
+                                        <li><a href="#">Who We Are ?</a></li>
+                                        <li><a href="#">Corporate Responsibility</a></li>
+                                        <li><a href="#">California Laws</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+
+                        <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+                        <div class="nov-html col-xl-3 col-lg-3 col-md-3">
+                            <div class="block">
+                                <div class="title_block">
+                                    MY ACCOUNT
+                                </div>
+                                <div class="block_content">
+                                    <ul>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Advanced Search</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">My Wishlist</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+
+                        <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+                        <div class="nov-html col-xl-2 col-lg-2 col-md-2">
+                            <div class="block">
+                                <div class="title_block">
+                                    NEED HELP
+                                </div>
+                                <div class="block_content">
+                                    <ul>
+                                        <li><a href="#">Order Tracking</a></li>
+                                        <li><a href="#">The Privacy Policy</a></li>
+                                        <li><a href="#">Payments & Returns</a></li>
+                                        <li><a href="#">Size Guide</a></li>
+                                        <li><a href="#">Product Care</a></li>
+                                        <li><a href="#">FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
+                    </div></div><div class="nov_row-full-width clearfix w-100"></div>
             </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="footer-info">
-                    <a href="/">
-                        <img src="{{ asset('frontend/imgs/flogo.png') }}" alt="img" />
-                    </a>
-                    <p>
-                        {{ $option['description_'.$lang] }}
-                    </p>
+    <div id="nov-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-items-center justify-content-md-start justify-content-sm-center d-flex pb-xs-max-20 flex-center">
+                    <span>
+            Copyright © 2018 Vinovathemes. All Rights Reserved
+          </span>
                 </div>
-            </div>
-            <div class="col-md-8 col-sm-12 col-xs-12">
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                <div class="imp-links">
-                    <h4>@lang('frontend.pages')</h4>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="/">@lang('frontend.home')</a>
-                        </li>
-                        <li><a href="{{ route('page', 10) }}">@lang('frontend.help')</a></li>
-                        <li><a href="{{ route('contact') }}">@lang('frontend.contact')</a></li>
-                        @auth
-                            <li><a href="{{ route('profile', Auth::user()->id) }}">@lang('frontend.profile')</a></li>
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    @lang('frontend.logout')
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                            @if (Auth::user()->type == 1)
-                                <li><a href="{{ route('store', Auth::user()->id) }}">@lang('frontend.my_store')</a></li>
-                                <li><a href="{{ route('sellings') }}">@lang('frontend.my_sellings')</a></li>
-                            @endif
-                        @else
-                            <li>
-                                <a href="{{ route('login') }}">@lang('frontend.login1')</a>
-                            <li>
-                                <a href="{{ route('register') }}">@lang('frontend.register')</a>
-                            </li>
-                            </li>
-                        @endauth
-                    </ul>
+                <div class="payment-image col-md-6 align-items-center justify-content-md-end justify-content-sm-center d-flex flex-center">
+                    <img class="img-fluid" src="/savemart/modules/novthemeconfig/images/payment-logo-1.png" alt="payment" title="Payment" />
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
-                <div class="imp-links">
-                    <h4>@lang('frontend.importantPages')</h4>
-                    <ul class="list-unstyled">
-                        @foreach ($pages->slice(0, 5) as $page)
-                            <li><a href="{{ route('page', $page->id) }}">{{ $page['title_'.$lang] }}</a></li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
-                <div class="imp-links">
-                    <h4>@lang('frontend.cat')</h4>
-                    <ul class="list-unstyled">
-                        @foreach($categories->slice(0 , 3) as $category)
-                            <li>
-                                <a href="{{ route('category' , $category->id) }}">{{ $category['name_'.$lang] }}</a>
-                            </li>
-                        @endforeach
-                        <li>
-                            <a href="{{ route('all_category') }}">@lang('frontend.all_catt')</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             </div>
         </div>
     </div>
 </footer>
-<section class="se-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="social-links">
-                    <ul class="list-inline">
-                        <li>
-                            <h5>Contact & Follow Us :</h5>
-                        </li>
-                        @if (isset($option->facebook))
-                            <li><a href="{{ $option->facebook }}"><i class="fa fa-facebook"></i></a></li>
-                        @endif
-                        @if (isset($option->twitter))
-                            <li><a href="{{ $option->twitter }}"><i class="fa fa-twitter"></i></a></li>
-                        @endif
-                        @if (isset($option->youtube))
-                            <li><a href="{{ $option->youtube }}"><i class="fa fa-youtube"></i></a></li>
-                        @endif
-                        @if (isset($option->instagram))
-                            <li><a href="{{ $option->instagram }}"><i class="fa fa-instagram"></i></a></li>
-                        @endif
-                        @if (isset($option->google))
-                            <li><a href="{{ $option->google }}"><i class="fa fa-google"></i></a></li>
-                        @endif
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="design text-left">
-                    <a href="https://7loll.net/">Designed & Developed By 7loll.com</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-<div class="fl"></div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{{ asset('frontend/js/jquery-3.3.1.min.js') }}"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('frontend/inc/nav/js/bootstrap-dropdownhover.min.js') }}"></script>
-<script src="{{ asset('frontend/inc/carousel/owl.carousel.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('frontend/js/star-rating.min.js') }}"></script>
-<script src="{{ asset('frontend/js/xzoom.min.js') }}"></script>
-<script src="{{ asset('frontend/js/jquery.fancybox.min.js') }}"></script>
-<script src="{{ asset('common/custom.js') }}"></script>
-<script src="{{ asset('frontend/js/custom.js') }}"></script>
-<script>
-    $('#resultsBox li:first').addClass('in');
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
-
-@section('frontend-footer')
-
-@show
-

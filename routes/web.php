@@ -13,14 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-View::creator('frontend.layout.header', function($view) {
-    $currentLanguage = '';
-    if (session()->has('currency')) {
-        $view->with('currentLanguage', Session()->get('currency'));
-    } else {
-        $view->with('currentLanguage', \App\Currency::find(1));
-    }
-});
+
 /*------------------------------ common ----------------------------------*/
 Route::get('/ajax-cities', 'frontendController@getCities');
 Route::get('/ajax-subcats', 'frontendController@getSubcats');
@@ -33,8 +26,7 @@ Route::get('auth/facebook/callback', 'frontendController@handleFacebookCallback'
 Route::get('auth/google', 'frontendController@redirectToGoogle');
 Route::get('auth/google/callback', 'frontendController@handleGoogleCallback');
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
+

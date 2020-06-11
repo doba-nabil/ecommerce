@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="direction: rtl" lang="ar">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="7loll.net">
-    <meta name="author" content="Aslm Ahmd">
+    <meta name="description" content="7loll.net , shopping , ecommerce , doba , shop">
+    <meta name="author" content="doba.shop">
+    <link rel="icon" href="{{ asset('backend/img/doba2.png') }}">
     <title>الدخول الى لوحة التحكم</title>
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/bootstrap-rtl.min.css') }}" rel="stylesheet">
@@ -25,7 +26,8 @@
     <div class="container" style="height: 100%">
         <div class="row" style="height: 100%">
             <div class="col-md-4" style="height: 100%">
-                <div class="login-section">
+                <div class="login-section text-center">
+                    <img src="{{ asset('backend/img/doba.png') }}">
                     <h1>مرحبا بك</h1>
                     <h2>برجاء ادخال بياناتك للدخول الى لوحة التحكم</h2>
                     @include('common.errors')
